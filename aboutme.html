@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="Arvdevable_Logo_Draft.ico">
+    <title>arvdevable | About Me</title>
+
+  <style>
+    /* Style for the song container */
+    .song {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 20px;
+      flex-wrap: nowrap;
+    }
+
+
+    /* Style for the cover art */
+    .song img {
+      width: 200px;
+      height: 200px;
+
+      margin-right: 20px;
+      transition: all 0.3s ease;
+
+    }
+
+    .song img:hover {
+      width: 400px;
+      height: 400px;
+    }
+
+
+
+    /* Style for the title */
+    .song p {
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      text-shadow: 2px 2px 4px #000000;
+      margin: 0;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    /* Show title when hovering over the container */
+    .song:hover p {
+      opacity: 1;
+    }
+
+    /* Animate the text */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Add delay for each text element */
+    .song p:nth-of-type(1) {
+      animation-delay: 0s;
+    }
+
+    .song p:nth-of-type(2) {
+      animation-delay: 0.5s;
+    }
+
+    .song p:nth-of-type(3) {
+      animation-delay: 1s;
+    }
+
+    .song p:nth-of-type(4) {
+      animation-delay: 1.5s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background-image"></div>
+
+  <div class="center" style="padding-top: 160px;padding-left: 100px; padding-right: 100px; size: 30px;">
+    <h1>About Me</h1>
+    <p>Meet arvdevable, a young and talented music producer from Magelang, Central
+      Java, Indonesia. At just 13, he's already made a name for himself in the electronic music scene with his unique
+      sound and thought-provoking lyrics.</p>
+    <p>He began experimenting with music production at 11 and quickly found a passion for creating electronic songs. He
+      draws inspiration from his love of writing short stories and novels, often incorporating themes of loneliness,
+      self-examination, and the contrast between chaos and beauty into his music.</p>
+    <p>His latest album, "lifelike," is his biggest yet and showcases his diverse range of skills and emotions. The
+      tracks are a rollercoaster of emotions, with a mix of instruments and styles that will keep you engaged and
+      captivated. From mellow and introspective to energetic and powerful, arvdevable's music is a dynamic and evolving
+      listening experience that is sure to inspire.</p>
+    <p>arvdevable is a rising star in the Indonesian music scene and is sure to make waves in the international
+      electronic music scene as well. Keep an eye out for his latest releases and live performances as he continues to
+      push the boundaries of electronic music and storytelling.</p>
+  </div>
+  <nav id="myTopnav">
+    <ul>
+      <li><a href="index.html" style="    color:  #5e5e5e;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+                ">back</a></li>
+      </li>
+
+    </ul>
+    </main>
+    <footer>
+      <p>&copy;
+        <script>document.write(new Date().getFullYear())</script> arvdevable, All Rights Reserved
+      </p>
+    </footer>
+    </div>
+    </div>
+</body>
+
+</html>

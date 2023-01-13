@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="shortcut icon" type="image/x-icon" href="Arvdevable_Logo_Draft.ico">
+    <title>arvdevable | Events</title>
+
+  <style>
+    /* Style for the song container */
+    .song {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 20px;
+      flex-wrap: nowrap;
+    }
+
+
+    /* Style for the cover art */
+    .song img {
+      width: 200px;
+      height: 200px;
+
+      margin-right: 20px;
+      transition: all 0.3s ease;
+
+    }
+
+    .song img:hover {
+      width: 400px;
+      height: 400px;
+    }
+
+
+
+    /* Style for the title */
+    .song p {
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      text-shadow: 2px 2px 4px #000000;
+      margin: 0;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    /* Show title when hovering over the container */
+    .song:hover p {
+      opacity: 1;
+    }
+
+    /* Animate the text */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Add delay for each text element */
+    .song p:nth-of-type(1) {
+      animation-delay: 0s;
+    }
+
+    .song p:nth-of-type(2) {
+      animation-delay: 0.5s;
+    }
+
+    .song p:nth-of-type(3) {
+      animation-delay: 1s;
+    }
+
+    .song p:nth-of-type(4) {
+      animation-delay: 1.5s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background-image"></div>
+  <header>
+  </header>
+  <main><br>
+    <div class="center" style="display: flex; justify-content: center; align-items: center;">
+      <a href="https://www.songkick.com/artists/10175622" class="songkick-widget" data-theme="dark"
+        data-detect-style="true" data-background-color="transparent" data-locale="en">tour dates</a>
+      <script src="//widget.songkick.com/10175622/widget.js"></script>
+  </main>
+  <footer>
+    <p>&copy;
+      <script>document.write(new Date().getFullYear())</script> arvdevable, All Rights Reserved
+    </p>
+  </footer>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="Arvdevable_Logo_Draft.ico">
+    <title>arvdevable | Songs</title>
+  <style>
+    /* Style for the song container */
+    .song {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 20px;
+      flex-wrap: nowrap;
+    }
+
+
+    /* Style for the cover art */
+    .song img {
+      width: 200px;
+      height: 200px;
+
+      margin-right: 20px;
+      transition: all 0.3s ease;
+
+    }
+
+    .song img:hover {
+      width: 400px;
+      height: 400px;
+    }
+
+
+
+    /* Style for the title */
+    .song p {
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      text-shadow: 2px 2px 4px #000000;
+      margin: 0;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    /* Show title when hovering over the container */
+    .song:hover p {
+      opacity: 1;
+    }
+
+    /* Animate the text */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Add delay for each text element */
+    .song p:nth-of-type(1) {
+      animation-delay: 0s;
+    }
+
+    .song p:nth-of-type(2) {
+      animation-delay: 0.5s;
+    }
+
+    .song p:nth-of-type(3) {
+      animation-delay: 1s;
+    }
+
+    .song p:nth-of-type(4) {
+      animation-delay: 1.5s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background-image"></div>
+  <header>
+  </header>
+<!--  <nav id="myTopnav">
+    <ul>
+      <li><a href="index.html" style="    color:  #5e5e5e;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+                ">back</a></li>
+      </li>
+
+    </ul> -->
+    <div class="center" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+      <div class="song">
+
+        <img
+          src="https://media.discordapp.net/attachments/828893588511129620/1063115331473780806/DALLE_2023-01-05_12.19.18_-_an_abstract_art_violet_coloured_abstract_crop_1.jpg?width=554&height=554"
+          alt="Soon!">
+
+        <img
+          src="https://media.discordapp.net/attachments/828893588511129620/1063115412692283443/SHOOT_1.jpg?width=554&height=554"
+          alt="arvdevable - SHOOT!">
+
+        <img
+          src="https://media.discordapp.net/attachments/828893588511129620/1063113524416614410/2018_cover_11.png?width=554&height=554"
+          alt="2018 (arvdevable Remix)" href="https://www.youtube.com/watch?v=ofx0gxOOnCs">
+
+        <img
+          src="https://media.discordapp.net/attachments/828893588511129620/1063114729364664350/Dracoflame_-_Illuminate_arvdevable_Remix.jpg?width=554&height=554"
+          alt="Dracoflame - Illuminate (arvdevable Remix)
+" href="https://youtu.be/4enNun-4V_I">
+      </div>
+    </div>
+    </main>
+    <footer>
+      <p>&copy;
+        <script>document.write(new Date().getFullYear())</script> arvdevable, All Rights Reserved
+      </p>
+    </footer>
+    </div>
+    </div>
+</body>
+
+</html>
